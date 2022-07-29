@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online test tizimi</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online test tizimi</h1>
+        <div class="headerText">Test qo'shish</div>
+        Savol: <input type="text" name="" id="question"> <br>
+        a variant: <input type="text" name="" id="a_variant"> <br>
+        b variant: <input type="text" name="" id="b_variant"> <br>
+        c variant: <input type="text" name="" id="c_variant"> <br>
+        d variant: <input type="text" name="" id="d_variant"> <br>
+        To'gri javob: <input type="text" name="" id="correct_answer"> <br>
+
+        <div class="error" id="errorText"></div>
+
+        <button class="btn" onclick="add()" id="addButton">Qo'shish</button>
+        <button class="btn" onclick="show()" id="showButton">Ko'rish</button>
+        <div id="resultOfAdded"></div>
+
+
+        <div class="headerText">Testni boshlash</div>
+        Test miqdori: <input type="number" name="" id="testAmount"> <br>
+        Test vaqti: <input type="number" name="" id="testTime"> min<br>
+
+        <div class="error" id="errorText2"></div>
+
+        <button class="btn" onclick="startTest()" id="startButton">Boshlash</button>
+
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
