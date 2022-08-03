@@ -61,7 +61,6 @@ function show() {
     dateSplitter(allLectures, lectureDates);
 
     for (let i = 1; i < allLectures.length; i++) {
-
         let speakerName = allLectures[i]["speaker"].split(' ');
 
         table += `
