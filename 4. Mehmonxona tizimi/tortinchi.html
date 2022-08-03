@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tortinchi.css">
+    <title>Mehmonxona tizimi</title>
+</head>
+<body>
+    <h1>Mehmonxona tizimi</h1>
+        <div class="headerText">Xona qo'shish</div> <br>
+        <p>Bir kishilik: 180.000 <br>
+            Ikki kishilik: 260.000 <br>
+            Uch kishilik: 280.000</p> <br>
+        Xona raqami: <input type="number" name="" id="classNumber"> <br>
+        Xona turi: <input type="text" name="" id="classType"> <br>
+
+        <div class="error"></div>
+
+        <button class="btn" onclick="add()">Qo'shish</button>
+        <button class="btn" onclick="show()">Ko'rish</button>
+        <div id="resultOfAdded"></div>
+
+        <div class="headerText">Xona buyurtma qilish</div> <br>
+        Dan: <input type="date" name="" id="fromDate"> <br>
+        Gacha: <input type="date" name="" id="toDate"> <br>
+        Xona turi: <input type="text" name="" id="classType2"> <br>
+        Xona raqami: <select name="" id="roomsList"></select> <br> <br>
+
+        <div class="error" id="error2"></div>
+
+        <button class="btn" onclick="book()">Zakazat</button>
+        <button class="btn" onclick="showBooked()">Ko'rish</button>
+        <div id="resultOfBooked"></div>
+
+        <script src="tortinchi.js"></script>
+</body>
+</html>
