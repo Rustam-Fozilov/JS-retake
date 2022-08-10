@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beshinchi.css">
+    <title>Eslatmalar kalendari</title>
+</head>
+
+<body>
+    <h1>Eslatmalar kalendari</h1>
+    <div class="headerText">Eslatma qo'shish</div> <br>
+    Matni: <input type="text" name="" id="text"> <br>
+    Sana: <input type="date" name="" id="date"> <br>
+    Vaqt: <input type="time" name="" id="time"> <br>
+    Muhimlik darajasi: <input placeholder="yuqori, o'rta, past" type="text" name="" id="priority"> <br>
+
+    <div class="error"></div>
+
+    <button class="btn" onclick="add()">Qo'shish</button>
+    <button class="btn" onclick="show()">Ko'rish</button>
+    <button class="btn" onclick="showCalendar()">Kalendar</button> <br>
+    <button id="prev-btn" hidden>prev</button>
+    <button id="next-btn" hidden>next</button>
+    <div id="result"></div>
+
+    <script src="beshinchi.js"></script>
+</body>
+
+</html>
