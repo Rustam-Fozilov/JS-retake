@@ -55,10 +55,10 @@ function show() {
 }
 
 /* TIMER UCHUN KERAKLI OZGARUVCHILAR */
-let index = 1; // timer uchun emas, test savollarining index raqami.
 let second = 0;
 let hour = 0;
 let date = new Date();
+let index = 1; // timer uchun emas, test savollarining index raqami.
 
 function startTest() {
     let testAmount = +document.getElementById('testAmount').value;
@@ -73,7 +73,7 @@ function startTest() {
     prevButton.textContent = 'Oldingisi';
     prevButton.className = 'btn';
 
-    if (!testMinute == '' || !testAmount == '') {
+    if (testMinute != '' || testAmount != '') {
         if (Number.isInteger(testAmount) && Number.isInteger(testMinute)) {
             if (testAmount > allTests.length - 1) {
                 error.textContent = 'Bunday miqdorda test mavjud emas';
@@ -109,7 +109,7 @@ function startTest() {
 
                     /* TIMERNI TUGAGANLIKKA TEKSHIRISH */
                     if (date.getHours() == 0 && date.getMinutes() == 0 && date.getSeconds() == 0) {
-                        console.log('keldi');
+                        console.log('tugadi');
                         return check(testAmount);
                     }
 
@@ -204,7 +204,7 @@ function check(testAmount) {
     <h2>Test tugadi<h2>
     Siz ${testAmount} ta testdan ${correctAnswers} ta to'g'ri javob topdingiz. (${percent} %)
     Tugatilgan vaqt ${date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()} <br>
-    <a href="index.html"><button class="btn">qaytadan boshlash</button></a>
+    <a href="ikkinchi.html"><button class="btn">qaytadan boshlash</button></a>
     `
 }
 

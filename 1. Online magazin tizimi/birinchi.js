@@ -134,4 +134,6 @@ function showBuyed() {
 
     table += "<tr><th colspan = 2>Jami</th><td>" + sum1 + "</td><td>" + sum2 + "</td></tr></table>"
     resultBuy.innerHTML = table
+
+    show();
 }

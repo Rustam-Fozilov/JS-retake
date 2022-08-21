@@ -74,7 +74,6 @@ function show() {
         }
     }
     // sorting table by clicking (end)
-
 }
 
 function editReminder() {
